@@ -18,7 +18,7 @@ export default function Starships() {
       let shipId = ship.url.split('/')
       shipId = shipId[shipId.length - 2]
       return (
-        <Link to={`/${shipId}`}>
+        <Link to={`/${shipId}`} key={i + "ship"}>
           <li key={i}>{ship.name}</li>
         </Link>
       )
